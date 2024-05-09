@@ -1,0 +1,57 @@
+html {
+    background-color: #111;
+}
+
+body {
+	overflow: clip;
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes orblur {
+    0% {filter: blur(100px);}
+    100% {filter: blur(0px);}
+}
+
+@keyframes orblurload {
+    0% {filter: blur(100px);}
+    100% {filter: blur(0px);}
+}
+
+@keyframes moominblur {
+    0% {filter: blur(100px);}
+    100% {filter: blur(0px);}
+}
+
+#orb {
+    opacity: .75;
+    position: absolute;
+    animation-name: orblur;
+    animation-delay: 0s;
+    animation-duration: 5s;
+
+	background-size: cover;
+	background-image: url("imgs/saint.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#moomin-orb {
+    width:  104vw;
+    height: 104vh;
+    position: absolute;
+    top: -2vh;
+    left: -2vh;
+
+    animation-name: moominblur;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+	background-size: cover;
+	background-image: url("imgs/bg.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
