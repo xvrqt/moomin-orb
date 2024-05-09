@@ -16,7 +16,7 @@
           src = ./.;
 
           installPhase = ''
-            cp -r $src/src $out
+            cp -r $src $out
           '';
         };
 
